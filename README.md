@@ -48,6 +48,7 @@ Agora que o ambiente está configurado, você pode iniciar o aplicativo. Execute
 
 ```bash
 npm start
+```
 
 Isso iniciará o aplicativo em modo de desenvolvimento. Abra http://localhost:3000 em seu navegador para visualizar o projeto.
 
