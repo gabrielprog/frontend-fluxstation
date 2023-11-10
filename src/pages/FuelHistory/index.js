@@ -3,31 +3,17 @@ import React, { useState, useEffect } from 'react';
 import { Redirect } from 'react-router-dom';
 
 import Center from '../../components/Container';
+
+import hasDriverId from '../../utils/CheckDriverIdInLocalStorage/';
+
 import FuelPurchaseItem from '../../components/FuelPurchaseItem';
 
-function checkDriverIdInLocalStorage() {
-  if (typeof localStorage !== 'undefined') {
-   const driverId = localStorage.getItem('driverId');
-
-    if (driverId) {
-      console.log('DriverId found:', driverId);
-      return true;
-    } else {
-      console.log('DriverId not found in localStorage');
-      return false;
-    }
-  } else {
-    console.error('localStorage not supported in the browser.');
-    return false;
-  }
-}
 
 function Fuel() {
   const [date, setDate] = useState(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [fuelPurchases, setFuelPurchases] = useState([]);
-  const hasDriverId = checkDriverIdInLocalStorage();
-
+  
   const handleChange = (event) => {
     setDate(event.target.value);
   };
