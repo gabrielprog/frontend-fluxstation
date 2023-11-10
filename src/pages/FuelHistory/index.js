@@ -45,7 +45,7 @@ function Fuel() {
     try {
       const response = await fetch(apiUrl);
       const data = await response.json();
-      setFuelPurchases(data);
+      setFuelPurchases(data.fuel);
 
     } catch (error) {
       console.error(error);
@@ -81,7 +81,7 @@ function Fuel() {
               value={date}
               onChange={handleChange}
               className="input"
-              placeholder="1999/00/00"
+              placeholder="0000/00/00"
           />
 
           <button
