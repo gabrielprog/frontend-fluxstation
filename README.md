@@ -9,7 +9,7 @@ Antes de iniciar, certifique-se de ter o [Node.js](https://nodejs.org/) instalad
 1. Clone o repositório para sua máquina local:
 
     ```bash
-    git clonehttps://github.com/gabrielprog/frontend-fluxstation.git
+    git clone https://github.com/gabrielprog/frontend-fluxstation.git
     ```
 
 2. Navegue até o diretório do projeto:
