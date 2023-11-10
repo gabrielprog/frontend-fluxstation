@@ -1,0 +1,27 @@
+/* Estilo para o componente FuelPurchaseItem */
+.fuel-purchase-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .fuel-purchase-item p {
+    margin: 0;
+    padding: 5px 0;
+  }
+  
+  /* Estilo para o componente FuelPurchaseList */
+  .fuel-purchase-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Estilo para os itens da lista dentro de FuelPurchaseList */
+  .fuel-purchase-list .fuel-purchase-item {
+    width: 80%;
+    max-width: 400px;
+  }
+  
